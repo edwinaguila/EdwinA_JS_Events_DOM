@@ -26,3 +26,16 @@ let clickBtn = document.getElementById("clickMe");
 clickBtn.addEventListener('click', function(){
     clickBtn.innerText = "You clicked me!";
 })
+
+let newBtn = document.querySelector('#randomColorBtn');
+
+newBtn.addEventListener('click', function(){
+    // Adding Math.floor so there are round integers
+    let red = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    
+    let randomColorBackground = `rgb(${red}, ${blue}, ${green})`;
+
+    document.body.style.backgroundColor = randomColorBackground;
+});
