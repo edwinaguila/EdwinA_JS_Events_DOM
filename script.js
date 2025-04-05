@@ -46,4 +46,11 @@ function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
     btn.classList.toggle("glow"); // Toggles glow effect
    }
-   
+
+let drkBtn = document.getElementById('darkMode');
+let bckgrnd = document.body;
+
+drkBtn.addEventListener('click', function(){
+    bckgrnd.classList.toggle('darkness');
+
+})
