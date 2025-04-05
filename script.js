@@ -39,3 +39,11 @@ newBtn.addEventListener('click', function(){
 
     document.body.style.backgroundColor = randomColorBackground;
 });
+
+let otherBtn = document.querySelector('.cool-btn');
+
+function changeBtnStyle() {
+    const btn = document.querySelector(".cool-btn")
+    btn.classList.toggle("glow"); // Toggles glow effect
+   }
+   
